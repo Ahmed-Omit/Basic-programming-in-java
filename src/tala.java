@@ -8,12 +8,10 @@ class tala {
         n = s.nextInt();
 
         for (i = 1; i <= n; i++) {
-            for (j = 1; j <= i; j++) {
-                if (n % j == 0) {
-                    c = c + 1;
-                }
-
+            if (n % i == 0) {
+                c = c + 1;
             }
+
         }
 
         if (c == 2) {
