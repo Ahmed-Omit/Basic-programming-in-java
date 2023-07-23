@@ -1,4 +1,5 @@
-interface  M1 {
+interface  M1
+{
     int X=50;
 
 }
