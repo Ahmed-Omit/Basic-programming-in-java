@@ -1,23 +1,27 @@
-import java.util.Scanner;
-
-class tala {
+public class tala {
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
-        int n, i, j, c = 0;
-        System.out.print(" Enter thr N : ");
-        n = s.nextInt();
+        System.out.println("Prime numbers from 1 to 100:");
 
-        for (i = 1; i <= n; i++) {
-            if (n % i == 0) {
-                c = c + 1;
+        for (int i = 2; i <= 100; i++) {
+            if (isPrime(i)) {
+                System.out.print(i + " ");
             }
+        }
+    }
 
+    public static boolean isPrime(int num) {
+        if (num <= 1) {
+            return false;
         }
 
-        if (c == 2) {
-            System.out.print("number is prime");
-        } else
-            System.out.println("number is not prime");
+        boolean isPrime = true;
+        for (int i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0) {
+                isPrime = false;
+                break;
+            }
+        }
 
+        return isPrime;
     }
 }
