@@ -7,16 +7,12 @@ public class Fectorial
         int n,i,sum=1;
         System.out.print( " Enter the value of N : ");
         n=ob.nextInt();
-        if(0<=n)
+        int fect=1;
+        for (i = 1; i <= n; i++)
         {
-            for (i = 1; i <= n; i++)
-            {
-                sum = sum * i;
-            }
-            System.out.println(" Summation = " + sum);
+            fect=fect*i;
         }
-        else
-            System.out.println(" Fectorial is not possible");
+        System.out.println(" fectorial = " + fect);
 
     }
 }
