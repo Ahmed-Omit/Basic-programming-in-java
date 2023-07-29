@@ -4,7 +4,7 @@ public class PrimeNumbers {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int n, i, j, b;
-        System.out.print(" Enter the value of n : ");
+        System.out.print(" Enter the rang of n : ");
         n = s.nextInt();
         for (i = 1; i <= n; i++) {
             b = 0;
