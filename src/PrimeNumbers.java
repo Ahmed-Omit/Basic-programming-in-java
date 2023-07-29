@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
-public class PrimeNumbers
-{
+public class PrimeNumbers {
     public static void main(String[] args)
     {
         Scanner s = new Scanner(System.in);
@@ -20,7 +19,7 @@ public class PrimeNumbers
             }
 
             if (b == 2)
-                System.out.println(i);}
+                System.out.println(i);
+        }
     }
 }
-
