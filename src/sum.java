@@ -1,21 +1,28 @@
 import java.util.*;
-public class sum {
+public class sum
+{
     public static void main(String[]args)
     {
+
         Scanner s = new Scanner(System.in);
-        int x,y,sum;
-        System.out.print(" Enter the value of x : ");
-        x=s.nextInt();
-        System.out.print(" Enter the value of y : ");
-        y=s.nextInt();
-        if( x>0 && y>0 && x>y)
+        int x,y,sum=0,i;
+        //System.out.print(" Enter the value of x : ");
+        //x=s.nextInt();
+        //System.out.print(" Enter the value of y : ");
+        for(i=1;i<=3;i++)
         {
-           sum=x+y;
-           y=x-y;
-            System.out.println(" Summation = " + sum );
-            System.out.println(y);
+            if(i==2)
+            {
+                continue;
+            }
+            sum=sum+i;
+            //return sum;
         }
-        else
-            System.out.print(" The sum  is not possible");
+        //return sum;
+        System.out.print(" summation : "  + sum);
+
+
     }
+
+
 }

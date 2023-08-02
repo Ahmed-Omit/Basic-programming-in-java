@@ -16,12 +16,8 @@ public class ExampleThreads
 {
     public static void main(String[] args) {
         A1 ob=new A1();
-        //ob.setPriority(Thread.MAX_PRIORITY);
-        System.out.println(" String Thread A");
-        ob.start();
         B1 obj=new B1();
-        //obj.setPriority(Thread.MIN_PRIORITY);
-       System.out.println(" String Thread B");
+        ob.start();
         obj.start();
 
 

@@ -1,31 +1,32 @@
-class a
-{
 
-    int x=20;
-}
-class b extends a
+
+// SINGLE INHERITANCE
+
+class A
 {
-    int y=10;
+    int x=50;
+
+
+}
+class B extends A
+{
+    int y=30;
     void add()
 
         {
-            x=x+y;
-            System.out.print(" sum = " + x);
+            y=x+y;
+            System.out.println("  output of sub class : " + y);
         }
 
 }
-
-//import java.util.*;
 
     public class Singleinheritance
     {
         public static void main(String[] args)
         {
-        //Scanner s = new Scanner(System.in);
-            b ob=new b();
-            ob.add();
+
+
+            B ob1=new B();
+            ob1.add();
         }
-
-
-
     }

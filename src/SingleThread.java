@@ -15,8 +15,8 @@ class M extends  Thread
 public class SingleThread
 {
     public static void main(String[] args) {
-        M op=new M();
-        op.start();
+        M object=new M();
+        object.start();
 
     }
 }

@@ -12,16 +12,12 @@ public class Statment
         System.out.print(" Enter the value of c : ");
         c=s.nextDouble();
         D=b*b-4*a*c;
-        if( D>0)
+        if( D>=0)
         {
-            x1=(-b+Math.sqrt(D))/2;
-            x2=(-b-Math.sqrt(D))/2;
+            x1=(-b+Math.sqrt(D))/2*a;
+            x2=(-b-Math.sqrt(D))/2*a;
             System.out.print(" The root are " + x1+ " and " + x2);
-        } else if (D==0)
-        {
-            x1=-b/(2*a);
-            System.out.print(" The root is " + x1);
-        }
+        } 
         else
             System.out.print(" The root are not real");
 
