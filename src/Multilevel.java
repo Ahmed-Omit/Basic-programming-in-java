@@ -1,15 +1,15 @@
-class e
+/*class student
 {
     float x =20;
 
 }
-class f extends e
+class teacher extends student
 
 {
     float y=10;
 
 }
-class g extends f
+class g extends f1
 {
     float z=7;
     void omit()
@@ -46,3 +46,7 @@ public class Multilevel
 
     }
 }
+
+ */
+
+
