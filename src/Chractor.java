@@ -1,7 +1,8 @@
 public class Chractor
 {
     public static void main(String[] args)
-    { char c ='a';
+    {
+        char c ='a';
         do
         //for(int i=0;i<=12;i=i+2)
         {
