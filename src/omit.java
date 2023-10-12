@@ -1,26 +1,21 @@
-import java.util.Scanner;
+//import java.util.Scanner;
 
 class omit {
-    public static void main(String[] args)
-    {
-        Scanner s=new Scanner(System.in);
-        int n,i,j,c=0;
-        System.out.print(" Enter thr N : ");
-        n=s.nextInt();
-        for(i=1;i<=n;i++)
-        {
-            if(n%i==0)
-            {
-                c=c+1;
-            }
+    public static void main(String[] args) {
+        // Scanner s=new Scanner(System.in);
+        int i, j, c = 0;
+        for (i = 0; i <= 50; i++) {
+            for (j = 1; j <= i; j++)
+                if (i % j == 0) {
+                    c = c + 1;
+                }
 
         }
-        if(c==2)
-        {
-            System.out.print("number is prime");
+        if (c == 2) {
+            System.out.print("number is prime" + i);
         }
-        else
-            System.out.println("number is not prime");
+
+        System.out.println("Here");
 
     }
 }
